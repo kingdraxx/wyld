@@ -262,6 +262,15 @@ img {
   color: black;
 }
 
+/* HAMBURGER */
+#menu {
+  display: none;
+}
+
+#menu-content {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .h1 {
     text-align: center;
@@ -351,5 +360,101 @@ img {
 
   .button1 {
     margin: 0;
+  }
+
+  /* NAVBAR */
+
+  nav {
+    padding: 3em 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+  }
+
+  nav h1 {
+    font-size: x-large;
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav li {
+    margin-left: 2em;
+    /* color: #fff; */
+  }
+
+  #menu {
+    cursor: pointer;
+    display: none;
+  }
+
+  #menu div {
+    height: 3px;
+    width: 25px;
+    background-color: lightsalmon;
+    border-radius: 100px;
+    margin-bottom: 4px;
+    transition: 0.3s ease-in;
+  }
+
+  #menu.open .linex {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #menu.open .liney {
+    visibility: hidden;
+  }
+
+  #menu.open .linez {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  #menu-content {
+    display: inherit;
+    background-color: #000000eb;
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    width: 100%;
+    transform: translateY(-1000px);
+    transition: 0.3s ease-in-out;
+  }
+
+  #menu-content.open {
+    transform: translateY(0);
+  }
+
+  #nav.open {
+    background-color: #000000eb;
+  }
+
+  #menu-content li {
+    text-align: center;
+    padding: 1em 0;
+    transition: 0.7s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    /* border-bottom: 0.3px solid gray; */
+  }
+
+  #menu-content li:hover {
+    background-color: gray;
+  }
+
+  /* #menu-content li:last-child {
+    border-bottom: none;
+  } */
+
+  @media (max-width: 760px) {
+    nav ul {
+      display: none;
+    }
+
+    #menu {
+      display: block;
+    }
   }
 }
