@@ -41,7 +41,7 @@ img {
 }
 
 #home {
-  width: 100vw;
+  height: 100vh;
   background-image: url("../img/bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -66,8 +66,8 @@ img {
 .flex {
   display: flex;
   justify-content: space-between;
-  margin-top: 7em;
   position: relative;
+  margin-top: 7em;
 }
 
 .h1 {
@@ -143,6 +143,8 @@ img {
   font-size: 3em;
   text-align: center;
   color: #fff;
+  margin-left: 4em;
+  margin-right: 4em;
 }
 
 .line3 {
@@ -258,4 +260,96 @@ img {
 
 ::placeholder {
   color: black;
+}
+
+@media (max-width: 760px) {
+  .h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-left: 0;
+  }
+
+  .k {
+    display: none;
+  }
+
+  .KING {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .button {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .line1 {
+    display: none;
+  }
+
+  .baseline {
+    display: block;
+    margin-top: 0;
+  }
+
+  .line2 {
+    padding: 0.4em;
+    background-color: lightsalmon;
+    width: 80vw;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 2em;
+  }
+
+  .btn {
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  #navbar ul {
+    display: none;
+  }
+
+  img {
+    width: 3em;
+  }
+
+  #content {
+    text-align: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* ABOUT */
+  .text {
+    font-size: 1.6em;
+    margin: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #body {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .flexx {
+    margin: 0;
+  }
+
+  .button1 {
+    margin: 0;
+  }
 }
