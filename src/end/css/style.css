@@ -170,7 +170,6 @@ img {
 .flexxx {
   display: flex;
   justify-content: space-between;
-  /* width: 100vw; */
   margin-top: 3em;
 }
 
@@ -207,7 +206,6 @@ img {
   transition: 0.3s ease-in-out;
   border: none;
   margin-top: 2em;
-  /* text-align: center; */
 }
 
 .form-wrap button:hover {
@@ -216,8 +214,6 @@ img {
 
 #container1 {
   margin: 2em auto;
-  /* max-width: 400px; */
-  /* padding: 1.5em; */
 }
 
 .form-wrap {
@@ -362,12 +358,53 @@ img {
     margin: 0;
   }
 
+  /* CONTACT */
+
+  .flexxx {
+    margin: 0;
+    margin-top: 10vh;
+  }
+
+  .line5 {
+    padding: 0.3em;
+  }
+
+  .line6 {
+    padding: 0.3em;
+  }
+
+  .baseline1 {
+    border-radius: 25px;
+    padding: 0.3em;
+    margin-top: 7vh;
+    margin-left: 12vw;
+    margin-right: 12vw;
+    background-color: lightsalmon;
+  }
+
+  .btnn {
+    font-size: 8px;
+  }
+
+  #container1 {
+    margin: 0;
+    width: 80vw;
+  }
+
+  .form-wrap {
+    padding: 0.7em 1.2em;
+  }
+
+  .form-wrap .form-group input {
+    padding: 0.6em;
+    padding-left: 25px;
+  }
+
   /* NAVBAR */
 
   nav {
     padding: 3em 10vw;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     transition: 0.3s ease-in-out;
   }
@@ -384,7 +421,6 @@ img {
 
   nav li {
     margin-left: 2em;
-    /* color: #fff; */
   }
 
   #menu {
@@ -438,16 +474,11 @@ img {
     transition: 0.7s ease-in-out;
     cursor: pointer;
     color: #fff;
-    /* border-bottom: 0.3px solid gray; */
   }
 
   #menu-content li:hover {
     background-color: gray;
   }
-
-  /* #menu-content li:last-child {
-    border-bottom: none;
-  } */
 
   @media (max-width: 760px) {
     nav ul {
